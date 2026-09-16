@@ -1,0 +1,78 @@
+/* ========================================================================
+   CUSTOMER DASHBOARD — extra polish on top of admin.css
+   ======================================================================== */
+
+/* Hero banner at the top of the customer dashboard */
+.customer-hero {
+    background: linear-gradient(135deg, #0d5c72 0%, #0a4a5c 100%);
+    color: #ffffff;
+    border-radius: 16px;
+    padding: 32px 36px;
+    margin: 0 20px var(--section-margin-btm, 32px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    box-shadow:
+        0 1px 2px rgba(13, 92, 114, 0.15),
+        0 12px 32px rgba(13, 92, 114, 0.18);
+}
+
+.customer-hero .hero-text h2 {
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+    margin-bottom: 8px;
+    color: #ffffff;
+}
+
+.customer-hero .hero-text p {
+    font-size: 14px;
+    opacity: 0.92;
+    max-width: 520px;
+}
+
+.customer-hero .hero-cta {
+    background: #ffffff;
+    color: #0d5c72;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    padding: 14px 26px;
+    border-radius: 12px;
+    white-space: nowrap;
+    transition: background 150ms ease-out;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
+}
+
+.customer-hero .hero-cta:hover {
+    background: #eaf4f7;
+}
+
+/* Customer header label — subtly different from admin */
+#header-customer {
+    color: #0d5c72;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+
+/* Status pill extra polish on the customer table */
+.payment-text {
+    font-size: 13px;
+    letter-spacing: 0.3px;
+}
+
+/* Update panel — profile info block */
+.update-panel {
+    margin-top: 8px;
+    padding-top: 18px;
+    border-top: 1px dashed #cfe1e8;
+}
+
+@media (max-width: 900px) {
+    .customer-hero {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 28px 24px;
+    }
+}

@@ -1,0 +1,55 @@
+.notif {
+    position: fixed;
+    top: 24px;
+    left: 24px;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    background-color: #ffffff;
+    color: #0d5c72;
+    padding: 16px 22px;
+    border-radius: 14px;
+    border-left: 4px solid #0d5c72;
+    box-shadow:
+        0 1px 2px rgba(13, 92, 114, 0.08),
+        0 12px 32px rgba(13, 92, 114, 0.12);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    opacity: 0;
+    transition: opacity 300ms cubic-bezier(0.4, 0, 0.2, 1);
+    pointer-events: auto;
+    max-width: 380px;
+}
+
+.notif.show {
+    opacity: 1;
+}
+
+.notif-dark {
+    background-color: #0d5c72;
+    color: #ffffff;
+    border-left-color: #2e9d7a;
+}
+
+.notif-message {
+    flex: 1;
+    line-height: 1.5;
+}
+
+.notif-close {
+    background: none;
+    border: none;
+    color: inherit;
+    font-size: 22px;
+    line-height: 1;
+    cursor: pointer;
+    padding: 0 0 0 8px;
+    opacity: 0.6;
+    transition: opacity 150ms;
+}
+
+.notif-close:hover {
+    opacity: 1;
+}
